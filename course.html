@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Java OOP Hub — Course</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="topbar">
+  <a class="brand" href="index.html"><span class="chip">J</span> JAVA OOP HUB</a>
+  <nav class="top-nav">
+    <a href="#module1">Foundations</a>
+    <a href="#module2">Objects</a>
+    <a href="#module3">4 Pillars</a>
+    <a href="#module4">Advanced</a>
+  </nav>
+  <div class="topbar-tag">IT-24007</div>
+</div>
+
+<div class="progress-bar-wrap">
+  <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+  <span class="progress-label"><span id="progressCount">0</span> / 32 topics marked done</span>
+</div>
+
+<div class="layout">
+  <nav class="sidebar">
+    <h3>COURSE OUTLINE</h3>
+    <div class="module-group">
+      <div class="module-title">MODULE 01 — FOUNDATIONS</div>
+      <a class="nav-link" data-target="t1" href="#t1"><span>Introduction to Java</span><span class="nav-check" data-check="t1"></span></a>
+      <a class="nav-link" data-target="t2" href="#t2"><span>Variables</span><span class="nav-check" data-check="t2"></span></a>
+      <a class="nav-link" data-target="t3" href="#t3"><span>Swap Two Variables</span><span class="nav-check" data-check="t3"></span></a>
+      <a class="nav-link" data-target="t4" href="#t4"><span>User Input</span><span class="nav-check" data-check="t4"></span></a>
+      <a class="nav-link" data-target="t5" href="#t5"><span>Expressions</span><span class="nav-check" data-check="t5"></span></a>
+      <a class="nav-link" data-target="t6" href="#t6"><span>If Statements</span><span class="nav-check" data-check="t6"></span></a>
+      <a class="nav-link" data-target="t7" href="#t7"><span>Switches</span><span class="nav-check" data-check="t7"></span></a>
+      <a class="nav-link" data-target="t8" href="#t8"><span>Logical Operators</span><span class="nav-check" data-check="t8"></span></a>
+      <a class="nav-link" data-target="t9" href="#t9"><span>Arrays</span><span class="nav-check" data-check="t9"></span></a>
+      <a class="nav-link" data-target="t10" href="#t10"><span>2D Arrays</span><span class="nav-check" data-check="t10"></span></a>
+      <a class="nav-link" data-target="t11" href="#t11"><span>String Methods</span><span class="nav-check" data-check="t11"></span></a>
+      <a class="nav-link" data-target="t12" href="#t12"><span>Methods</span><span class="nav-check" data-check="t12"></span></a>
+      <a class="nav-link" data-target="t13" href="#t13"><span>Overloaded Methods</span><span class="nav-check" data-check="t13"></span></a>
+      <a class="nav-link" data-target="t14" href="#t14"><span>printf</span><span class="nav-check" data-check="t14"></span></a>
+      <a class="nav-link" data-target="t15" href="#t15"><span>final Keyword</span><span class="nav-check" data-check="t15"></span></a>
+    </div>
+    <div class="module-group">
+      <div class="module-title">MODULE 02 — OBJECTS & CLASSES</div>
+      <a class="nav-link" data-target="t16" href="#t16"><span>Objects & Classes (OOP)</span><span class="nav-check" data-check="t16"></span></a>
+      <a class="nav-link" data-target="t17" href="#t17"><span>Constructors</span><span class="nav-check" data-check="t17"></span></a>
+      <a class="nav-link" data-target="t18" href="#t18"><span>Variable Scope</span><span class="nav-check" data-check="t18"></span></a>
+      <a class="nav-link" data-target="t19" href="#t19"><span>Overloaded Constructors</span><span class="nav-check" data-check="t19"></span></a>
+      <a class="nav-link" data-target="t20" href="#t20"><span>toString Method</span><span class="nav-check" data-check="t20"></span></a>
+      <a class="nav-link" data-target="t21" href="#t21"><span>Arrays of Objects</span><span class="nav-check" data-check="t21"></span></a>
+      <a class="nav-link" data-target="t22" href="#t22"><span>Static Keyword</span><span class="nav-check" data-check="t22"></span></a>
+    </div>
+    <div class="module-group">
+      <div class="module-title">MODULE 03 — 4 PILLARS OF OOP</div>
+      <a class="nav-link" data-target="t23" href="#t23"><span>Inheritance</span><span class="nav-check" data-check="t23"></span></a>
+      <a class="nav-link" data-target="t24" href="#t24"><span>Method Overriding</span><span class="nav-check" data-check="t24"></span></a>
+      <a class="nav-link" data-target="t25" href="#t25"><span>super Keyword</span><span class="nav-check" data-check="t25"></span></a>
+      <a class="nav-link" data-target="t26" href="#t26"><span>Abstraction</span><span class="nav-check" data-check="t26"></span></a>
+      <a class="nav-link" data-target="t27" href="#t27"><span>Access Modifiers</span><span class="nav-check" data-check="t27"></span></a>
+      <a class="nav-link" data-target="t28" href="#t28"><span>Encapsulation</span><span class="nav-check" data-check="t28"></span></a>
+    </div>
+    <div class="module-group">
+      <div class="module-title">MODULE 04 — ADVANCED OOP</div>
+      <a class="nav-link" data-target="t29" href="#t29"><span>Copy Objects</span><span class="nav-check" data-check="t29"></span></a>
+      <a class="nav-link" data-target="t30" href="#t30"><span>Interfaces</span><span class="nav-check" data-check="t30"></span></a>
+      <a class="nav-link" data-target="t31" href="#t31"><span>Polymorphism</span><span class="nav-check" data-check="t31"></span></a>
+      <a class="nav-link" data-target="t32" href="#t32"><span>Dynamic Polymorphism</span><span class="nav-check" data-check="t32"></span></a>
+    </div>
+  </nav>
+
+  <main class="content">
+
+    <section class="module-section" id="module1">
+      <h2><span class="num">01</span> Foundations</h2>
+      <p class="module-desc">Java basics — variables, input, expressions, conditionals, arrays, strings, methods, and printf. Without these, nothing else in OOP holds up.</p>
+      <div class="topics">
+
+        <article class="sheet" id="t1" data-sheet="t1">
+          <div class="corner c1"></div><div class="corner c2"></div><div class="corner c3"></div><div class="corner c4"></div>
+          <div class="sheet-head">
+            <span class="sheet-no mono">01 / 32</span>
+            <div class="sheet-titles"><h3>🚀 Introduction to Java</h3><span class="sheet-tag">BEGINNER · FOUNDATION</span></div>
+            <button class="mark-done" data-sheet-btn="t1">MARK DONE</button>
+          </div>
+          <p class="sheet-body">Java is a general-purpose, object-oriented, platform-independent language: source code compiles to bytecode that runs on the Java Virtual Machine (JVM), so the same program can run on Windows, macOS, or Linux without changes.</p>
+          <div class="video-wrap"><iframe src="https://www.youtube.com/embed/xk4_1vDrzzo?start=0" title="Introduction to Java - Java OOP" allowfullscreen loading="lazy"></iframe></div>
+          <div class="video-caption"><a href="https://www.youtube.com/watch?v=xk4_1vDrzzo&t=0s" target="_blank" rel="noopener">▶ Bro Code — Java Full Course</a><a href="https://www.geeksforgeeks.org/java/introduction-to-java/" target="_blank" rel="noopener">GeeksforGeeks: Introduction to Java</a></div>
+          <div class="key-box">
+            <span class="kb-label">KEY CONCEPTS</span>
+            <ul>
+              <li>Java code compiles to <b>bytecode</b>, then the JVM runs it — "write once, run anywhere"</li>
+              <li>Java is strongly typed, case-sensitive, and fully object-oriented</li>
+              <li>Every application needs a <code>public static void main(String[] args)</code> entry point</li>
+              <li>The JDK (Java Development Kit) is what you install to write and run Java</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="sheet" id="t2" data-sheet="t2">
+          <div class="corner c1"></div><div class="corner c2"></div><div class="corner c3"></div><div class="corner c4"></div>
+          <div class="sheet-head">
+            <span class="sheet-no mono">02 / 32</span>
+            <div class="sheet-titles"><h3>🧮 Variables</h3><span class="sheet-tag">BEGINNER · FOUNDATION</span></div>
+            <button class="mark-done" data-sheet-btn="t2">MARK DONE</button>
+          </div>
+          <p class="sheet-body">A variable is a named container that stores a value of a specific type. Java is statically typed, so you declare the type up front — once created, that variable can only ever hold values of that type.</p>
+          <div class="video-wrap"><iframe src="https://www.youtube.com/embed/xk4_1vDrzzo?start=1226" title="Variables - Java OOP" allowfullscreen loading="lazy"></iframe></div>
+          <div class="video-caption"><a href="https://www.youtube.com/watch?v=xk4_1vDrzzo&t=1226s" target="_blank" rel="noopener">▶ Bro Code — Java Full Course</a><a href="https://www.geeksforgeeks.org/java/java-variables/" target="_blank" rel="noopener">GeeksforGeeks: Java Variables</a></div>
+          <div class="key-box">
+            <span class="kb-label">KEY CONCEPTS</span>
+            <ul>
+              <li>Declared as <code>type name = value;</code>, e.g. <code>int age = 21;</code></li>
+              <li>Primitive types include <code>int</code>, <code>double</code>, <code>char</code>, <code>boolean</code></li>
+              <li>Variables must be declared before they're used</li>
+              <li>Naming convention: start lowercase, use camelCase for multi-word names</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="sheet" id="t3" data-sheet="t3">
+          <div class="corner c1"></div><div class="corner c2"></div><div class="corner c3"></div><div class="corner c4"></div>
+          <div class="sheet-head">
+            <span class="sheet-no mono">03 / 32</span>
+            <div class="sheet-titles"><h3>🔄 Swap Two Variables</h3><span class="sheet-tag">BEGINNER · PRACTICE</span></div>
+            <button class="mark-done" data-sheet-btn="t3">MARK DONE</button>
+          </div>
+          <p class="sheet-body">Swapping two variables' values is a classic beginner exercise. The safest approach uses a third, temporary variable to hold one value while the swap happens, so no data gets overwritten before it's copied.</p>
+          <div class="video-wrap"><iframe src="https://www.youtube.com/embed/xk4_1vDrzzo?start=1978" title="Swap Two Variables - Java OOP" allowfullscreen loading="lazy"></iframe></div>
+          <div class="video-caption"><a href="https://www.youtube.com/watch?v=xk4_1vDrzzo&t=1978s" target="_blank" rel="noopener">▶ Bro Code — Java Full Course</a><a href="https://www.geeksforgeeks.org/java/java-program-to-swap-two-numbers/" target="_blank" rel="noopener">GeeksforGeeks: Swap Two Numbers</a></div>
+          <div class="key-box">
+            <span class="kb-label">KEY CONCEPTS</span>
+            <ul>
+              <li>A temporary variable holds one value while the other gets overwritten</li>
+              <li>Order matters — copy before you overwrite, or the original value is lost</li>
+              <li>Numbers can also be swapped without a temp variable using arithmetic (+/-) or XOR</li>
+              <li>A simple exercise for building comfort with variable assignment</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="sheet" id="t4" data-sheet="t4">
+          <div class="corner c1"></div><div class="corner c2"></div><div class="corner c3"></div><div class="corner c4"></div>
+          <div class="sheet-head">
+            <span class="sheet-no mono">04 / 32</span>
+            <div class="sheet-titles"><h3>⌨️ User Input</h3><span class="sheet-tag">BEGINNER · I/O</span></div>
+            <button class="mark-done" data-sheet-btn="t4">MARK DONE</button>
+          </div>
+          <p class="sheet-body">The <code>Scanner</code> class from <code>java.util</code> lets a program read input typed by the user at the keyboard, so programs can react to real data instead of only hardcoded values.</p>
+          <div class="video-wrap"><iframe src="https://www.youtube.com/embed/xk4_1vDrzzo?start=2202" title="User Input - Java OOP" allowfullscreen loading="lazy"></iframe></div>
+          <div class="video-caption"><a href="https://www.youtube.com/watch?v=xk4_1vDrzzo&t=2202s" target="_blank" rel="noopener">▶ Bro Code — Java Full Course</a><a href="https://www.geeksforgeeks.org/java/scanner-class-in-java/" target="_blank" rel="noopener">GeeksforGeeks: Scanner Class</a></div>
+          <div class="key-box">
+            <span class="kb-label">KEY CONCEPTS</span>
+            <ul>
+              <li>Import it first: <code>import java.util.Scanner;</code></li>
+              <li><code>nextInt()</code>, <code>nextDouble()</code>, and <code>nextLine()</code> read different types</li>
+              <li>Mixing <code>nextInt()</code> and <code>nextLine()</code> can skip input — a common beginner trap</li>
+              <li>Close the scanner when you're done reading input</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="sheet" id="t5" data-sheet="t5">
+          <div class="corner c1"></div><div class="corner c2"></div><div class="corner c3"></div><div class="corner c4"></div>
+          <div class="sheet-head">
+            <span class="sheet-no mono">05 / 32</span>
+            <div class="sheet-titles"><h3>➗ Expressions</h3><span class="sheet-tag">BEGINNER · FOUNDATION</span></div>
+            <button class="mark-done" data-sheet-btn="t5">MARK DONE</button>
+          </div>
+          <p class="sheet-body">An expression is any combination of variables, values, and operators that evaluates down to a single value — from a simple <code>a + b</code> to a longer calculation involving several operators.</p>
+          <div class="video-wrap"><iframe src="https://www.youtube.com/embed/xk4_1vDrzzo?start=2680" title="Expressions - Java OOP" allowfullscreen loading="lazy"></iframe></div>
+          <div class="video-caption"><a href="https://www.youtube.com/watch?v=xk4_1vDrzzo&t=2680s" target="_blank" rel="noopener">▶ Bro Code — Java Full Course</a><a href="https://www.geeksforgeeks.org/java/operators-in-java/" target="_blank" rel="noopener">GeeksforGeeks: Operators in Java</a></div>
+          <div class="key-box">
+            <span class="kb-label">KEY CONCEPTS</span>
+            <ul>
+              <li>Arithmetic operators: <code>+ - * / %</code></li>
+              <li>Operator precedence decides which part of an expression runs first</li>
+              <li>Increment/decrement operators: <code>++</code> and <code>--</code></li>
+              <li>Mixing types (like <code>int</code> and <code>double</code>) triggers automatic type promotion</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="sheet" id="t6" data-sheet="t6">
+          <div class="corner c1"></div><div class="corner c2"></div><div class="corner c3"></div><div class="corner c4"></div>
+          <div class="sheet-head">
+            <span class="sheet-no mono">06 / 32</span>
+            <div class="sheet-titles"><h3>🔀 If Statements</h3><span class="sheet-tag">BEGINNER · CONTROL FLOW</span></div>
+            <button class="mark-done" data-sheet-btn="t6">MARK DONE</button>
+          </div>
+          <p class="sheet-body">An <code>if</code> statement runs a block of code only when its condition evaluates to <code>true</code>. Chaining <code>else if</code> and <code>else</code> lets a program branch between several possible paths.</p>
+          <div class="video-wrap"><iframe src="https://www.youtube.com/embed/xk4_1vDrzzo?start=3939" title="If Statements - Java OOP" allowfullscreen loading="lazy"></iframe></div>
+          <div class="video-caption"><a href="https://www.youtube.com/watch?v=xk4_1vDrzzo&t=3939s" target="_blank" rel="noopener">▶ Bro Code — Java Full Course</a><a href="https://www.geeksforgeeks.org/java/decision-making-javaif-else-switch/" target="_blank" rel="noopener">GeeksforGeeks: if-else in Java</a></div>
+          <div class="key-box">
+            <span class="kb-label">KEY CONCEPTS</span>
+            <ul>
+              <li>The condition inside <code>if(...)</code> must evaluate to a <code>boolean</code></li>
+              <li><code>else if</code> chains let you check several conditions in order</li>
+              <li><code>else</code> catches everything not matched above it</li>
+              <li>If statements can be nested inside each other for more specific logic</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="sheet" id="t7" data-sheet="t7">
+          <div class="corner c1"></div><div class="corner c2"></div><div class="corner c3"></div><div class="corner c4"></div>
+          <div class="sheet-head">
+            <span class="sheet-no mono">07 / 32</span>
+            <div class="sheet-titles"><h3>🎚️ Switches</h3><span class="sheet-tag">BEGINNER · CONTROL FLOW</span></div>
+            <button class="mark-done" data-sheet-btn="t7">MARK DONE</button>
+          </div>
+          <p class="sheet-body">A <code>switch</code> statement picks one branch to run out of many, based on the value of a single variable — a cleaner alternative to a long chain of <code>if / else if</code> statements.</p>
+          <div class="video-wrap"><iframe src="https://www.youtube.com/embed/xk4_1vDrzzo?start=4311" title="Switches - Java OOP" allowfullscreen loading="lazy"></iframe></div>
+          <div class="video-caption"><a href="https://www.youtube.com/watch?v=xk4_1vDrzzo&t=4311s" target="_blank" rel="noopener">▶ Bro Code — Java Full Course</a><a href="https://www.geeksforgeeks.org/java/switch-statement-in-java/" target="_blank" rel="noopener">GeeksforGeeks: Switch Statement</a></div>
+          <div class="key-box">
+            <span class="kb-label">KEY CONCEPTS</span>
+            <ul>
+              <li>Each <code>case</code> needs a <code>break</code>, or execution "falls through" into the next one</li>
+              <li><code>default</code> runs when nothing else matches</li>
+              <li>Works with <code>int</code>, <code>char</code>, <code>String</code>, and <code>enum</code> values</li>
+              <li>Modern Java also supports a compact switch-expression syntax</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="sheet" id="t8" data-sheet="t8">
+          <div class="corner c1"></div><div class="corner c2"></div><div class="corner c3"></div><div class="corner c4"></div>
+          <div class="sheet-head">
+            <span class="sheet-no mono">08 / 32</span>
+            <div class="sheet-titles"><h3>🔗 Logical Operators</h3><span class="sheet-tag">BEGINNER · CONTROL FLOW</span></div>
+            <button class="mark-done" data-sheet-btn="t8">MARK DONE</button>
+          </div>
+          <p class="sheet-body">Logical operators combine multiple boolean expressions into one condition — useful whenever a decision depends on more than one thing being true or false at the same time.</p>
+          <div class="video-wrap"><iframe src="https://www.youtube.com/embed/xk4_1vDrzzo?start=4596" title="Logical Operators - Java OOP" allowfullscreen loading="lazy"></iframe></div>
+          <div class="video-caption"><a href="https://www.youtube.com/watch?v=xk4_1vDrzzo&t=4596s" target="_blank" rel="noopener">▶ Bro Code — Java Full Course</a><a href="https://www.geeksforgeeks.org/java/java-operators/" target="_blank" rel="noopener">GeeksforGeeks: Java Operators</a></div>
+          <div class="key-box">
+            <span class="kb-label">KEY CONCEPTS</span>
+            <ul>
+              <li><code>&&</code> (AND) — true only if both sides are true</li>
+              <li><code>||</code> (OR) — true if at least one side is true</li>
+              <li><code>!</code> (NOT) — flips a boolean's value</li>
+              <li>Java short-circuits: it skips evaluating the right side when the result is already decided</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="sheet" id="t9" data-sheet="t9">
+          <div class="corner c1"></div><div class="corner c2"></div><div class="corner c3"></div><div class="corner c4"></div>
+          <div class="sheet-head">
+            <span class="sheet-no mono">09 / 32</span>
+            <div class="sheet-titles"><h3>📚 Arrays</h3><span class="sheet-tag">BEGINNER · DATA STRUCTURES</span></div>
+            <button class="mark-done" data-sheet-btn="t9">MARK DONE</button>
+          </div>
+          <p class="sheet-body">An array stores a fixed number of values of the same type in one variable, each reachable by an index starting at 0 — a straightforward way to group related data together.</p>
+          <div class="video-wrap"><iframe src="https://www.youtube.com/embed/xk4_1vDrzzo?start=5908" title="Arrays - Java OOP" allowfullscreen loading="lazy"></iframe></div>
+          <div class="video-caption"><a href="https://www.youtube.com/watch?v=xk4_1vDrzzo&t=5908s" target="_blank" rel="noopener">▶ Bro Code — Java Full Course</a><a href="https://www.geeksforgeeks.org/java/arrays-in-java/" target="_blank" rel="noopener">GeeksforGeeks: Arrays in Java</a></div>
+          <div class="key-box">
+            <span class="kb-label">KEY CONCEPTS</span>
+            <ul>
+              <li>Declared as <code>type[] name = new type[size];</code></li>
+              <li>Indexing starts at <code>0</code>, not <code>1</code></li>
+              <li><code>.length</code> gives the array's size</li>
+              <li>Once created, an array's size is fixed and can't grow or shrink</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="sheet" id="t10" data-sheet="t10">
+          <div class="corner c1"></div><div class="corner c2"></div><div class="corner c3"></div><div class="corner c4"></div>
+          <div class="sheet-head">
+            <span class="sheet-no mono">10 / 32</span>
+            <div class="sheet-titles"><h3>🗺️ 2D Arrays</h3><span class="sheet-tag">BEGINNER · DATA STRUCTURES</span></div>
+            <button class="mark-done" data-sheet-btn="t10">MARK DONE</button>
+          </div>
+          <p class="sheet-body">A two-dimensional array is essentially an array of arrays — a natural way to represent grid, table, or matrix-shaped data like a tic-tac-toe board or a spreadsheet of numbers.</p>
+          <div class="video-wrap"><iframe src="https://www.youtube.com/embed/xk4_1vDrzzo?start=6294" title="2D Arrays - Java OOP" allowfullscreen loading="lazy"></iframe></div>
+          <div class="video-caption"><a href="https://www.youtube.com/watch?v=xk4_1vDrzzo&t=6294s" target="_blank" rel="noopener">▶ Bro Code — Java Full Course</a><a href="https://www.geeksforgeeks.org/java/multidimensional-arrays-in-java/" target="_blank" rel="noopener">GeeksforGeeks: Multidimensional Arrays</a></div>
+          <div class="key-box">
+            <span class="kb-label">KEY CONCEPTS</span>
+            <ul>
+              <li>Declared as <code>type[][] name = new type[rows][cols];</code></li>
+              <li>Access an element with two indices: <code>grid[row][col]</code></li>
+              <li>Nested <code>for</code> loops are the standard way to walk through every cell</li>
+              <li>Rows don't have to be the same length — this is called a jagged array</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="sheet" id="t11" data-sheet="t11">
+          <div class="corner c1"></div><div class="corner c2"></div><div class="corner c3"></div><div class="corner c4"></div>
+          <div class="sheet-head">
+            <span class="sheet-no mono">11 / 32</span>
+            <div class="sheet-titles"><h3>✂️ String Methods</h3><span class="sheet-tag">BEGINNER · TEXT PROCESSING</span></div>
+            <button class="mark-done" data-sheet-btn="t11">MARK DONE</button>
+          </div>
+          <p class="sheet-body">Java's <code>String</code> class ships with many built-in methods for inspecting and transforming text, from measuring length to slicing out a substring or changing letter case.</p>
+          <div class="video-wrap"><iframe src="https://www.youtube.com/embed/xk4_1vDrzzo?start=6779" title="String Methods - Java OOP" allowfullscreen loading="lazy"></iframe></div>
+          <div class="video-caption"><a href="https://www.youtube.com/watch?v=xk4_1vDrzzo&t=6779s" target="_blank" rel="noopener">▶ Bro Code — Java Full Course</a><a href="https://www.geeksforgeeks.org/java/java-string-class-methods-set-1/" target="_blank" rel="noopener">GeeksforGeeks: String Methods</a></div>
+          <div class="key-box">
+            <span class="kb-label">KEY CONCEPTS</span>
+            <ul>
+              <li><code>.length()</code>, <code>.charAt(i)</code>, and <code>.substring(a,b)</code> are used constantly</li>
+              <li><code>.toUpperCase()</code> / <code>.toLowerCase()</code> change letter case</li>
+              <li>Compare string content with <code>.equals()</code>, not <code>==</code></li>
+              <li>Strings in Java are <b>immutable</b> — every "change" actually returns a new string</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="sheet" id="t12" data-sheet="t12">
+          <div class="corner c1"></div><div class="corner c2"></div><div class="corner c3"></div><div class="corner c4"></div>
+          <div class="sheet-head">
+            <span class="sheet-no mono">12 / 32</span>
+            <div class="sheet-titles"><h3>🧰 Methods</h3><span class="sheet-tag">BEGINNER · ORGANIZATION</span></div>
+            <button class="mark-done" data-sheet-btn="t12">MARK DONE</button>
+          </div>
+          <p class="sheet-body">A method is a reusable, named block of code that performs a specific task. Instead of repeating logic everywhere it's needed, you define it once and call it by name whenever it's needed.</p>
+          <div class="video-wrap"><iframe src="https://www.youtube.com/embed/xk4_1vDrzzo?start=8480" title="Methods - Java OOP" allowfullscreen loading="lazy"></iframe></div>
+          <div class="video-caption"><a href="https://www.youtube.com/watch?v=xk4_1vDrzzo&t=8480s" target="_blank" rel="noopener">▶ Bro Code — Java Full Course</a><a href="https://www.geeksforgeeks.org/java/methods-in-java/" target="_blank" rel="noopener">GeeksforGeeks: Methods in Java</a></div>
+          <div class="key-box">
+            <span class="kb-label">KEY CONCEPTS</span>
+            <ul>
+              <li>A method has a return type, a name, and a parameter list</li>
+              <li><code>void</code> means the method doesn't return a value</li>
+              <li>Parameters are placeholders; arguments are the actual values passed in when calling it</li>
+              <li>Breaking code into methods keeps programs organized and reusable</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="sheet" id="t13" data-sheet="t13">
+          <div class="corner c1"></div><div class="corner c2"></div><div class="corner c3"></div><div class="corner c4"></div>
+          <div class="sheet-head">
+            <span class="sheet-no mono">13 / 32</span>
+            <div class="sheet-titles"><h3>🧩 Overloaded Methods</h3><span class="sheet-tag">BEGINNER · FLEXIBILITY</span></div>
+            <button class="mark-done" data-sheet-btn="t13">MARK DONE</button>
+          </div>
+          <p class="sheet-body">Method overloading lets a class have several methods that share the same name, as long as their parameter lists differ in number or type — Java figures out which one to call based on the arguments given.</p>
+          <div class="video-wrap"><iframe src="https://www.youtube.com/embed/xk4_1vDrzzo?start=9144" title="Overloaded Methods - Java OOP" allowfullscreen loading="lazy"></iframe></div>
+          <div class="video-caption"><a href="https://www.youtube.com/watch?v=xk4_1vDrzzo&t=9144s" target="_blank" rel="noopener">▶ Bro Code — Java Full Course</a><a href="https://www.geeksforgeeks.org/java/method-overloading-in-java/" target="_blank" rel="noopener">GeeksforGeeks: Method Overloading</a></div>
+          <div class="key-box">
+            <span class="kb-label">KEY CONCEPTS</span>
+            <ul>
+              <li>Overloaded methods differ by number or type of parameters, not by return type alone</li>
+              <li>Java resolves which version to call at compile time, based on the arguments</li>
+              <li>Lets related operations share one familiar, readable method name</li>
+              <li>Different from overriding — overloading happens within a single class</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="sheet" id="t14" data-sheet="t14">
+          <div class="corner c1"></div><div class="corner c2"></div><div class="corner c3"></div><div class="corner c4"></div>
+          <div class="sheet-head">
+            <span class="sheet-no mono">14 / 32</span>
+            <div class="sheet-titles"><h3>🖨️ printf</h3><span class="sheet-tag">BEGINNER · OUTPUT</span></div>
+            <button class="mark-done" data-sheet-btn="t14">MARK DONE</button>
+          </div>
+          <p class="sheet-body"><code>System.out.printf()</code> formats output using format specifiers instead of manual string concatenation, giving precise control over how numbers and text are displayed.</p>
+          <div class="video-wrap"><iframe src="https://www.youtube.com/embed/xk4_1vDrzzo?start=9483" title="printf - Java OOP" allowfullscreen loading="lazy"></iframe></div>
+          <div class="video-caption"><a href="https://www.youtube.com/watch?v=xk4_1vDrzzo&t=9483s" target="_blank" rel="noopener">▶ Bro Code — Java Full Course</a><a href="https://www.geeksforgeeks.org/java/java-printf-method-with-examples/" target="_blank" rel="noopener">GeeksforGeeks: Java printf()</a></div>
+          <div class="key-box">
+            <span class="kb-label">KEY CONCEPTS</span>
+            <ul>
+              <li><code>%d</code> formats an integer, <code>%s</code> a string, <code>%f</code> a floating-point number</li>
+              <li><code>%.2f</code> controls decimal precision, e.g. rounding to 2 places</li>
+              <li><code>%n</code> inserts a platform-independent newline</li>
+              <li>Width and alignment flags can line up columns of output neatly</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="sheet" id="t15" data-sheet="t15">
+          <div class="corner c1"></div><div class="corner c2"></div><div class="corner c3"></div><div class="corner c4"></div>
+          <div class="sheet-head">
+            <span class="sheet-no mono">15 / 32</span>
+            <div class="sheet-titles"><h3>🔒 final Keyword</h3><span class="sheet-tag">BEGINNER · IMMUTABILITY</span></div>
+            <button class="mark-done" data-sheet-btn="t15">MARK DONE</button>
+          </div>
+          <p class="sheet-body">The <code>final</code> keyword marks something as unchangeable once set. Applied to a variable it creates a constant; applied to a method or class it locks down overriding or extension.</p>
+          <div class="video-wrap"><iframe src="https://www.youtube.com/embed/xk4_1vDrzzo?start=10165" title="final Keyword - Java OOP" allowfullscreen loading="lazy"></iframe></div>
+          <div class="video-caption"><a href="https://www.youtube.com/watch?v=xk4_1vDrzzo&t=10165s" target="_blank" rel="noopener">▶ Bro Code — Java Full Course</a><a href="https://www.geeksforgeeks.org/java/final-keyword-in-java/" target="_blank" rel="noopener">GeeksforGeeks: final Keyword</a></div>
+          <div class="key-box">
+            <span class="kb-label">KEY CONCEPTS</span>
+            <ul>
+              <li>A <code>final</code> variable can only be assigned a value once</li>
+              <li>By convention, <code>final</code> constants are named in <code>ALL_CAPS</code></li>
+              <li>A <code>final</code> method cannot be overridden by a subclass</li>
+              <li>A <code>final</code> class cannot be extended (subclassed) at all</li>
+            </ul>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="module-section" id="module2">
+      <h2><span class="num">02</span> Objects & Classes</h2>
+      <p class="module-desc">Classes, objects, constructors, and variables — the basic building blocks. Without these, nothing else in OOP holds up.</p>
+      <div class="topics">
+
+        <article class="sheet" id="t16" data-sheet="t16">
+          <div class="corner c1"></div><div class="corner c2"></div><div class="corner c3"></div><div class="corner c4"></div>
+          <div class="sheet-head">
+            <span class="sheet-no mono">16 / 32</span>
+            <div class="sheet-titles"><h3>📦 Objects & Classes (OOP)</h3><span class="sheet-tag">BEGINNER · FOUNDATION</span></div>
+            <button class="mark-done" data-sheet-btn="t16">MARK DONE</button>
+          </div>
+          <p class="sheet-body">A class is a <b>blueprint or template</b> — it defines what properties (fields) something will have and what it can do (methods). An object is an actual instance built from that blueprint using the <code>new</code> keyword. You can create as many independent objects as you want from a single class, and each one holds its own data.</p>
+          <div class="video-wrap"><iframe src="https://www.youtube.com/embed/xk4_1vDrzzo?start=10284" title="Objects & Classes (OOP) - Java OOP" allowfullscreen loading="lazy"></iframe></div>
+          <div class="video-caption"><a href="https://www.youtube.com/watch?v=xk4_1vDrzzo&t=10284s" target="_blank" rel="noopener">▶ Bro Code — Java Full Course</a><a href="https://www.geeksforgeeks.org/java/java-oops-concepts/" target="_blank" rel="noopener">GeeksforGeeks: Classes & Objects</a></div>
+          <div class="key-box">
+            <span class="kb-label">KEY CONCEPTS</span>
+            <ul>
+              <li>A <b>class</b> is a blueprint that defines properties (fields) and behavior (methods)</li>
+              <li>An <b>object</b> is an instance of a class, created with the <code>new</code> keyword</li>
+              <li>Fields hold state; methods define behavior</li>
+              <li>Multiple objects can be created from a single class</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="sheet" id="t17" data-sheet="t17">
+          <div class="corner c1"></div><div class="corner c2"></div><div class="corner c3"></div><div class="corner c4"></div>
+          <div class="sheet-head">
+            <span class="sheet-no mono">17 / 32</span>
+            <div class="sheet-titles"><h3>🏗️ Constructors</h3><span class="sheet-tag">BEGINNER · INITIALIZATION</span></div>
+            <button class="mark-done" data-sheet-btn="t17">MARK DONE</button>
+          </div>
+          <p class="sheet-body">A constructor is a special method whose name exactly matches the class name and has no return type. Whenever an object is created with <code>new</code>, the constructor runs automatically and sets up that object's initial state.</p>
+          <div class="video-wrap"><iframe src="https://www.youtube.com/embed/xk4_1vDrzzo?start=10896" title="Constructors - Java OOP" allowfullscreen loading="lazy"></iframe></div>
+          <div class="video-caption"><a href="https://www.youtube.com/watch?v=xk4_1vDrzzo&t=10896s" target="_blank" rel="noopener">▶ Bro Code — Java Full Course</a><a href="https://www.geeksforgeeks.org/java/constructors-in-java/" target="_blank" rel="noopener">GeeksforGeeks: Constructors</a></div>
+          <div class="key-box">
+            <span class="kb-label">KEY CONCEPTS</span>
+            <ul>
+              <li>A constructor's name matches the class name, and it has no return type</li>
+              <li>It runs automatically, once, when an object is created</li>
+              <li>A constructor with no parameters is called a <b>default constructor</b></li>
+              <li>If you don't write one, Java provides a no-argument constructor automatically</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="sheet" id="t18" data-sheet="t18">
+          <div class="corner c1"></div><div class="corner c2"></div><div class="corner c3"></div><div class="corner c4"></div>
+          <div class="sheet-head">
+            <span class="sheet-no mono">18 / 32</span>
+            <div class="sheet-titles"><h3>🎯 Variable Scope</h3><span class="sheet-tag">BEGINNER · FOUNDATION</span></div>
+            <button class="mark-done" data-sheet-btn="t18">MARK DONE</button>
+          </div>
+          <p class="sheet-body">Scope determines where a variable can be seen and used. A <b>local variable</b> only exists inside the method where it's declared. An <b>instance variable</b> is declared in the class, and each object gets its own separate copy. A <b>static (class) variable</b> is shared by every object of that class.</p>
+          <div class="video-wrap"><iframe src="https://www.youtube.com/embed/xk4_1vDrzzo?start=11496" title="Variable Scope - Java OOP" allowfullscreen loading="lazy"></iframe></div>
+          <div class="video-caption"><a href="https://www.youtube.com/watch?v=xk4_1vDrzzo&t=11496s" target="_blank" rel="noopener">▶ Bro Code — Java Full Course</a><a href="https://www.geeksforgeeks.org/java/variable-scope-in-java/" target="_blank" rel="noopener">GeeksforGeeks: Variable Scope</a></div>
+          <div class="key-box">
+            <span class="kb-label">KEY CONCEPTS</span>
+            <ul>
+              <li><b>Local variables</b> — declared inside a method, only available there</li>
+              <li><b>Instance variables</b> — declared in a class, one separate copy per object</li>
+              <li><b>Class/static variables</b> — shared across every instance</li>
+              <li>Use <code>this</code> to tell a local variable apart from an instance variable with the same name</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="sheet" id="t19" data-sheet="t19">
+          <div class="corner c1"></div><div class="corner c2"></div><div class="corner c3"></div><div class="corner c4"></div>
+          <div class="sheet-head">
+            <span class="sheet-no mono">19 / 32</span>
+            <div class="sheet-titles"><h3>⚙️ Overloaded Constructors</h3><span class="sheet-tag">BEGINNER · FLEXIBILITY</span></div>
+            <button class="mark-done" data-sheet-btn="t19">MARK DONE</button>
+          </div>
+          <p class="sheet-body">A single class can have several constructors, as long as their parameter count or types differ — this is called <b>constructor overloading</b>. It lets you create objects from the same class in more than one way, depending on how much information you have available at that point.</p>
+          <div class="video-wrap"><iframe src="https://www.youtube.com/embed/xk4_1vDrzzo?start=11799" title="Overloaded Constructors - Java OOP" allowfullscreen loading="lazy"></iframe></div>
+          <div class="video-caption"><a href="https://www.youtube.com/watch?v=xk4_1vDrzzo&t=11799s" target="_blank" rel="noopener">▶ Bro Code — Java Full Course</a><a href="https://www.geeksforgeeks.org/java/constructor-overloading-in-java/" target="_blank" rel="noopener">GeeksforGeeks: Constructor Overloading</a></div>
+          <div class="key-box">
+            <span class="kb-label">KEY CONCEPTS</span>
+            <ul>
+              <li>The same class can hold multiple constructors with different parameter lists</li>
+              <li>Java picks the right one based on the number and type of arguments passed</li>
+              <li><code>this(...)</code> lets one constructor call another in the same class</li>
+              <li>Gives more flexibility in how objects get created</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="sheet" id="t20" data-sheet="t20">
+          <div class="corner c1"></div><div class="corner c2"></div><div class="corner c3"></div><div class="corner c4"></div>
+          <div class="sheet-head">
+            <span class="sheet-no mono">20 / 32</span>
+            <div class="sheet-titles"><h3>📄 toString Method</h3><span class="sheet-tag">BEGINNER · REPRESENTATION</span></div>
+            <button class="mark-done" data-sheet-btn="t20">MARK DONE</button>
+          </div>
+          <p class="sheet-body">Every Java object inherits a default <code>toString()</code> method from the <code>Object</code> class, which prints an unreadable memory-address-style string. Overriding this method lets you return a clean, human-readable description of the object instead — and it's called automatically whenever you print the object or concatenate it into a string.</p>
+          <div class="video-wrap"><iframe src="https://www.youtube.com/embed/xk4_1vDrzzo?start=12244" title="toString Method - Java OOP" allowfullscreen loading="lazy"></iframe></div>
+          <div class="video-caption"><a href="https://www.youtube.com/watch?v=xk4_1vDrzzo&t=12244s" target="_blank" rel="noopener">▶ Bro Code — Java Full Course</a><a href="https://www.geeksforgeeks.org/java/overriding-tostring-method-in-java/" target="_blank" rel="noopener">GeeksforGeeks: toString()</a></div>
+          <div class="key-box">
+            <span class="kb-label">KEY CONCEPTS</span>
+            <ul>
+              <li>The default <code>toString()</code> shows a hashcode / memory reference</li>
+              <li>Overriding it lets you show whatever readable format you want</li>
+              <li>It's called automatically on print or string concatenation</li>
+              <li>Extremely useful for debugging and logging</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="sheet" id="t21" data-sheet="t21">
+          <div class="corner c1"></div><div class="corner c2"></div><div class="corner c3"></div><div class="corner c4"></div>
+          <div class="sheet-head">
+            <span class="sheet-no mono">21 / 32</span>
+            <div class="sheet-titles"><h3>🗂️ Arrays of Objects</h3><span class="sheet-tag">BEGINNER · COLLECTIONS</span></div>
+            <button class="mark-done" data-sheet-btn="t21">MARK DONE</button>
+          </div>
+          <p class="sheet-body">An array doesn't just hold primitive data — it can hold multiple <b>objects</b> of the same type too. Writing <code>Student[] students = new Student[5];</code> reserves space for 5 student objects, which then each need to be initialized individually.</p>
+          <div class="video-wrap"><iframe src="https://www.youtube.com/embed/xk4_1vDrzzo?start=12608" title="Arrays of Objects - Java OOP" allowfullscreen loading="lazy"></iframe></div>
+          <div class="video-caption"><a href="https://www.youtube.com/watch?v=xk4_1vDrzzo&t=12608s" target="_blank" rel="noopener">▶ Bro Code — Java Full Course</a><a href="https://www.geeksforgeeks.org/java/array-of-objects-in-java/" target="_blank" rel="noopener">GeeksforGeeks: Array of Objects</a></div>
+          <div class="key-box">
+            <span class="kb-label">KEY CONCEPTS</span>
+            <ul>
+              <li>An array can hold several objects of the same class</li>
+              <li>Each index still needs to be initialized with <code>new</code> separately</li>
+              <li>A loop makes it easy to iterate through every object</li>
+              <li>Useful for managing many similar objects at once</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="sheet" id="t22" data-sheet="t22">
+          <div class="corner c1"></div><div class="corner c2"></div><div class="corner c3"></div><div class="corner c4"></div>
+          <div class="sheet-head">
+            <span class="sheet-no mono">22 / 32</span>
+            <div class="sheet-titles"><h3>⚡ Static Keyword</h3><span class="sheet-tag">INTERMEDIATE · SHARED STATE</span></div>
+            <button class="mark-done" data-sheet-btn="t22">MARK DONE</button>
+          </div>
+          <p class="sheet-body">A <code>static</code> field or method belongs to the <b>class itself</b>, not to any one object. That means every object shares the exact same copy of a static field, and a static method can be called directly using the class name, without creating an object first.</p>
+          <div class="video-wrap"><iframe src="https://www.youtube.com/embed/xk4_1vDrzzo?start=13227" title="Static Keyword - Java OOP" allowfullscreen loading="lazy"></iframe></div>
+          <div class="video-caption"><a href="https://www.youtube.com/watch?v=xk4_1vDrzzo&t=13227s" target="_blank" rel="noopener">▶ Bro Code — Java Full Course</a><a href="https://www.geeksforgeeks.org/java/static-keyword-java/" target="_blank" rel="noopener">GeeksforGeeks: static Keyword</a></div>
+          <div class="key-box">
+            <span class="kb-label">KEY CONCEPTS</span>
+            <ul>
+              <li>A static member belongs to the class, not to a specific instance</li>
+              <li>All objects share the same value of a static field</li>
+              <li>Static methods can be called directly as <code>ClassName.methodName()</code></li>
+              <li>A static method can't directly access non-static (instance) members</li>
+            </ul>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="module-section" id="module3">
+      <h2><span class="num">03</span> 4 Pillars of OOP</h2>
+      <p class="module-desc">Inheritance, Encapsulation, Abstraction, and Polymorphism — the four pillars that make code reusable and maintainable.</p>
+      <div class="topics">
+
+        <article class="sheet" id="t23" data-sheet="t23">
+          <div class="corner c1"></div><div class="corner c2"></div><div class="corner c3"></div><div class="corner c4"></div>
+          <div class="sheet-head">
+            <span class="sheet-no mono">23 / 32</span>
+            <div class="sheet-titles"><h3>👨‍👩‍👧 Inheritance</h3><span class="sheet-tag">PILLAR · REUSABILITY</span></div>
+            <button class="mark-done" data-sheet-btn="t23">MARK DONE</button>
+          </div>
+          <p class="sheet-body">Using the <code>extends</code> keyword, one class (a child/subclass) inherits the fields and methods of another class (its parent/superclass). Instead of rewriting the same code, you keep it in one common parent class and let every child class reuse it.</p>
+          <div class="video-wrap"><iframe src="https://www.youtube.com/embed/xk4_1vDrzzo?start=13690" title="Inheritance - Java OOP" allowfullscreen loading="lazy"></iframe></div>
+          <div class="video-caption"><a href="https://www.youtube.com/watch?v=xk4_1vDrzzo&t=13690s" target="_blank" rel="noopener">▶ Bro Code — Java Full Course</a><a href="https://www.geeksforgeeks.org/java/inheritance-in-java/" target="_blank" rel="noopener">GeeksforGeeks: Inheritance</a></div>
+          <div class="key-box">
+            <span class="kb-label">KEY CONCEPTS</span>
+            <ul>
+              <li><code>extends</code> gives a child class the parent's fields and methods</li>
+              <li>Reduces duplicate code and increases reusability</li>
+              <li>Represents an "is-a" relationship — e.g. Dog is-a Animal</li>
+              <li>Java supports single inheritance (one parent class only)</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="sheet" id="t24" data-sheet="t24">
+          <div class="corner c1"></div><div class="corner c2"></div><div class="corner c3"></div><div class="corner c4"></div>
+          <div class="sheet-head">
+            <span class="sheet-no mono">24 / 32</span>
+            <div class="sheet-titles"><h3>🔁 Method Overriding</h3><span class="sheet-tag">PILLAR · CUSTOMIZATION</span></div>
+            <button class="mark-done" data-sheet-btn="t24">MARK DONE</button>
+          </div>
+          <p class="sheet-body">A child class can redefine a method it inherited from its parent, keeping the same name and parameters — this is called <b>overriding</b>. It lets a subclass replace the parent's default behavior with its own, more specific version.</p>
+          <div class="video-wrap"><iframe src="https://www.youtube.com/embed/xk4_1vDrzzo?start=14025" title="Method Overriding - Java OOP" allowfullscreen loading="lazy"></iframe></div>
+          <div class="video-caption"><a href="https://www.youtube.com/watch?v=xk4_1vDrzzo&t=14025s" target="_blank" rel="noopener">▶ Bro Code — Java Full Course</a><a href="https://www.geeksforgeeks.org/java/overriding-in-java/" target="_blank" rel="noopener">GeeksforGeeks: Method Overriding</a></div>
+          <div class="key-box">
+            <span class="kb-label">KEY CONCEPTS</span>
+            <ul>
+              <li>An overriding method must match the parent's name and parameters exactly</li>
+              <li>Using <code>@Override</code> is good practice and catches mistakes early</li>
+              <li>At runtime, the version matching the object's actual type is called</li>
+              <li>Different from overloading — overloading happens in one class, overriding across parent/child</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="sheet" id="t25" data-sheet="t25">
+          <div class="corner c1"></div><div class="corner c2"></div><div class="corner c3"></div><div class="corner c4"></div>
+          <div class="sheet-head">
+            <span class="sheet-no mono">25 / 32</span>
+            <div class="sheet-titles"><h3>🔼 super Keyword</h3><span class="sheet-tag">PILLAR · PARENT ACCESS</span></div>
+            <button class="mark-done" data-sheet-btn="t25">MARK DONE</button>
+          </div>
+          <p class="sheet-body">The <code>super</code> keyword lets a child class reach directly into its parent's constructor, methods, or fields. It's especially useful inside an overridden method when you still want to run the parent's original version via <code>super.methodName()</code>.</p>
+          <div class="video-wrap"><iframe src="https://www.youtube.com/embed/xk4_1vDrzzo?start=14253" title="super Keyword - Java OOP" allowfullscreen loading="lazy"></iframe></div>
+          <div class="video-caption"><a href="https://www.youtube.com/watch?v=xk4_1vDrzzo&t=14253s" target="_blank" rel="noopener">▶ Bro Code — Java Full Course</a><a href="https://www.geeksforgeeks.org/java/super-keyword/" target="_blank" rel="noopener">GeeksforGeeks: super Keyword</a></div>
+          <div class="key-box">
+            <span class="kb-label">KEY CONCEPTS</span>
+            <ul>
+              <li><code>super()</code> calls the parent class's constructor</li>
+              <li><code>super.method()</code> calls the parent's original version of a method</li>
+              <li>If a child doesn't call it explicitly, Java calls <code>super()</code> for you</li>
+              <li>Lets you keep parent behavior even after overriding it</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="sheet" id="t26" data-sheet="t26">
+          <div class="corner c1"></div><div class="corner c2"></div><div class="corner c3"></div><div class="corner c4"></div>
+          <div class="sheet-head">
+            <span class="sheet-no mono">26 / 32</span>
+            <div class="sheet-titles"><h3>🧩 Abstraction</h3><span class="sheet-tag">PILLAR · SIMPLICITY</span></div>
+            <button class="mark-done" data-sheet-btn="t26">MARK DONE</button>
+          </div>
+          <p class="sheet-body">Abstraction means showing only what's necessary and hiding the complicated implementation underneath. In Java, this is built using <code>abstract class</code> and <code>abstract method</code> — the parent class declares "what" needs to happen, and each child class decides "how" it actually happens.</p>
+          <div class="video-wrap"><iframe src="https://www.youtube.com/embed/xk4_1vDrzzo?start=14706" title="Abstraction - Java OOP" allowfullscreen loading="lazy"></iframe></div>
+          <div class="video-caption"><a href="https://www.youtube.com/watch?v=xk4_1vDrzzo&t=14706s" target="_blank" rel="noopener">▶ Bro Code — Java Full Course</a><a href="https://www.geeksforgeeks.org/java/abstraction-in-java-2/" target="_blank" rel="noopener">GeeksforGeeks: Abstraction</a></div>
+          <div class="key-box">
+            <span class="kb-label">KEY CONCEPTS</span>
+            <ul>
+              <li>You can't create an object directly from an <code>abstract class</code></li>
+              <li>An <code>abstract method</code> has no body — subclasses must implement it</li>
+              <li>The goal is hiding complexity and showing only the essentials</li>
+              <li>Guarantees a common structure/contract across subclasses</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="sheet" id="t27" data-sheet="t27">
+          <div class="corner c1"></div><div class="corner c2"></div><div class="corner c3"></div><div class="corner c4"></div>
+          <div class="sheet-head">
+            <span class="sheet-no mono">27 / 32</span>
+            <div class="sheet-titles"><h3>🔐 Access Modifiers</h3><span class="sheet-tag">PILLAR · VISIBILITY CONTROL</span></div>
+            <button class="mark-done" data-sheet-btn="t27">MARK DONE</button>
+          </div>
+          <p class="sheet-body">Access modifiers decide where a class, field, or method can be reached from. Java has four levels — <code>public</code> (anywhere), <code>protected</code> (same package + subclasses), default / package-private (same package only), and <code>private</code> (only inside that class).</p>
+          <div class="video-wrap"><iframe src="https://www.youtube.com/embed/xk4_1vDrzzo?start=15001" title="Access Modifiers - Java OOP" allowfullscreen loading="lazy"></iframe></div>
+          <div class="video-caption"><a href="https://www.youtube.com/watch?v=xk4_1vDrzzo&t=15001s" target="_blank" rel="noopener">▶ Bro Code — Java Full Course</a><a href="https://www.geeksforgeeks.org/java/access-modifiers-java/" target="_blank" rel="noopener">GeeksforGeeks: Access Modifiers</a></div>
+          <div class="key-box">
+            <span class="kb-label">KEY CONCEPTS</span>
+            <ul>
+              <li><code>public</code> — accessible from anywhere</li>
+              <li><code>private</code> — accessible only inside its own class</li>
+              <li><code>protected</code> — accessible from the same package and subclasses</li>
+              <li>default (no modifier) — accessible only within the same package</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="sheet" id="t28" data-sheet="t28">
+          <div class="corner c1"></div><div class="corner c2"></div><div class="corner c3"></div><div class="corner c4"></div>
+          <div class="sheet-head">
+            <span class="sheet-no mono">28 / 32</span>
+            <div class="sheet-titles"><h3>🛡️ Encapsulation</h3><span class="sheet-tag">PILLAR · DATA PROTECTION</span></div>
+            <button class="mark-done" data-sheet-btn="t28">MARK DONE</button>
+          </div>
+          <p class="sheet-body">Encapsulation means keeping a class's fields <code>private</code>, blocking direct outside access, and instead exposing controlled access through <code>getter</code>/<code>setter</code> methods — so invalid or unsafe values never sneak in.</p>
+          <div class="video-wrap"><iframe src="https://www.youtube.com/embed/xk4_1vDrzzo?start=15579" title="Encapsulation - Java OOP" allowfullscreen loading="lazy"></iframe></div>
+          <div class="video-caption"><a href="https://www.youtube.com/watch?v=xk4_1vDrzzo&t=15579s" target="_blank" rel="noopener">▶ Bro Code — Java Full Course</a><a href="https://www.geeksforgeeks.org/java/encapsulation-in-java/" target="_blank" rel="noopener">GeeksforGeeks: Encapsulation</a></div>
+          <div class="key-box">
+            <span class="kb-label">KEY CONCEPTS</span>
+            <ul>
+              <li>Keeping fields <code>private</code> blocks direct outside access</li>
+              <li><code>getX()</code> / <code>setX()</code> methods provide controlled access</li>
+              <li>Validation inside a setter can stop invalid data from being set</li>
+              <li>Improves data protection and long-term maintainability</li>
+            </ul>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="module-section" id="module4">
+      <h2><span class="num">04</span> Advanced OOP</h2>
+      <p class="module-desc">Copying, contracts, and polymorphism — the topics where real, flexible Java code begins.</p>
+      <div class="topics">
+
+        <article class="sheet" id="t29" data-sheet="t29">
+          <div class="corner c1"></div><div class="corner c2"></div><div class="corner c3"></div><div class="corner c4"></div>
+          <div class="sheet-head">
+            <span class="sheet-no mono">29 / 32</span>
+            <div class="sheet-titles"><h3>📋 Copy Objects</h3><span class="sheet-tag">ADVANCED · MEMORY MODEL</span></div>
+            <button class="mark-done" data-sheet-btn="t29">MARK DONE</button>
+          </div>
+          <p class="sheet-body">Writing <code>obj2 = obj1</code> doesn't create a new object — it just copies the <b>reference</b> to the same one. To get a truly independent copy, you need to build a new object and copy the values over yourself (a shallow copy, or a deep copy for nested objects).</p>
+          <div class="video-wrap"><iframe src="https://www.youtube.com/embed/xk4_1vDrzzo?start=16050" title="Copy Objects - Java OOP" allowfullscreen loading="lazy"></iframe></div>
+          <div class="video-caption"><a href="https://www.youtube.com/watch?v=xk4_1vDrzzo&t=16050s" target="_blank" rel="noopener">▶ Bro Code — Java Full Course</a><a href="https://www.geeksforgeeks.org/java/clone-in-java/" target="_blank" rel="noopener">GeeksforGeeks: Object Cloning</a></div>
+          <div class="key-box">
+            <span class="kb-label">KEY CONCEPTS</span>
+            <ul>
+              <li><code>=</code> copies a reference, not a new object</li>
+              <li>Changing one variable's object affects the other, since they point to the same thing</li>
+              <li>Getting an independent copy means building a new object and copying its fields</li>
+              <li>Know the difference between a shallow copy and a deep copy when objects are nested</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="sheet" id="t30" data-sheet="t30">
+          <div class="corner c1"></div><div class="corner c2"></div><div class="corner c3"></div><div class="corner c4"></div>
+          <div class="sheet-head">
+            <span class="sheet-no mono">30 / 32</span>
+            <div class="sheet-titles"><h3>🔌 Interfaces</h3><span class="sheet-tag">ADVANCED · CONTRACTS</span></div>
+            <button class="mark-done" data-sheet-btn="t30">MARK DONE</button>
+          </div>
+          <p class="sheet-body">An interface is a fully abstract "contract" — it only lists method signatures, with no implementation at all. Any class that <code>implements</code> it must provide those methods. This gives Java a way to get multiple-inheritance-like flexibility.</p>
+          <div class="video-wrap"><iframe src="https://www.youtube.com/embed/xk4_1vDrzzo?start=16443" title="Interfaces - Java OOP" allowfullscreen loading="lazy"></iframe></div>
+          <div class="video-caption"><a href="https://www.youtube.com/watch?v=xk4_1vDrzzo&t=16443s" target="_blank" rel="noopener">▶ Bro Code — Java Full Course</a><a href="https://www.geeksforgeeks.org/java/interfaces-in-java/" target="_blank" rel="noopener">GeeksforGeeks: Interfaces</a></div>
+          <div class="key-box">
+            <span class="kb-label">KEY CONCEPTS</span>
+            <ul>
+              <li>Interface methods are abstract by default (pre-Java 8 style)</li>
+              <li>A class can <code>implements</code> more than one interface at once</li>
+              <li>Guarantees that certain methods will exist on the implementing class</li>
+              <li>Unlike an abstract class, an interface is fully abstract and supports multiple implementation</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="sheet" id="t31" data-sheet="t31">
+          <div class="corner c1"></div><div class="corner c2"></div><div class="corner c3"></div><div class="corner c4"></div>
+          <div class="sheet-head">
+            <span class="sheet-no mono">31 / 32</span>
+            <div class="sheet-titles"><h3>🎭 Polymorphism</h3><span class="sheet-tag">ADVANCED · MANY FORMS</span></div>
+            <button class="mark-done" data-sheet-btn="t31">MARK DONE</button>
+          </div>
+          <p class="sheet-body">Polymorphism literally means "many forms." It means the same method call, or the same interface, can behave differently depending on the object behind it. An <code>Animal</code> reference could actually hold a <code>Dog</code> or a <code>Cat</code>, and calling <code>sound()</code> on it behaves differently each time.</p>
+          <div class="video-wrap"><iframe src="https://www.youtube.com/embed/xk4_1vDrzzo?start=16939" title="Polymorphism - Java OOP" allowfullscreen loading="lazy"></iframe></div>
+          <div class="video-caption"><a href="https://www.youtube.com/watch?v=xk4_1vDrzzo&t=16939s" target="_blank" rel="noopener">▶ Bro Code — Java Full Course</a><a href="https://www.geeksforgeeks.org/java/polymorphism-in-java/" target="_blank" rel="noopener">GeeksforGeeks: Polymorphism</a></div>
+          <div class="key-box">
+            <span class="kb-label">KEY CONCEPTS</span>
+            <ul>
+              <li>Same method/operation behaves differently across different objects</li>
+              <li>Compile-time polymorphism — method overloading</li>
+              <li>Runtime polymorphism — method overriding</li>
+              <li>A parent-type reference can hold and handle a child object</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="sheet" id="t32" data-sheet="t32">
+          <div class="corner c1"></div><div class="corner c2"></div><div class="corner c3"></div><div class="corner c4"></div>
+          <div class="sheet-head">
+            <span class="sheet-no mono">32 / 32</span>
+            <div class="sheet-titles"><h3>✨ Dynamic Polymorphism</h3><span class="sheet-tag">ADVANCED · RUNTIME BINDING</span></div>
+            <button class="mark-done" data-sheet-btn="t32">MARK DONE</button>
+          </div>
+          <p class="sheet-body">Also called <b>runtime polymorphism</b>, this is what method overriding actually produces. Which method runs isn't decided when the program compiles — it's decided <b>while the program is running</b>, based on the object's real class, not the reference type pointing to it.</p>
+          <div class="video-wrap"><iframe src="https://www.youtube.com/embed/xk4_1vDrzzo?start=17215" title="Dynamic Polymorphism - Java OOP" allowfullscreen loading="lazy"></iframe></div>
+          <div class="video-caption"><a href="https://www.youtube.com/watch?v=xk4_1vDrzzo&t=17215s" target="_blank" rel="noopener">▶ Bro Code — Java Full Course</a><a href="https://www.geeksforgeeks.org/java/dynamic-method-dispatch-runtime-polymorphism-java/" target="_blank" rel="noopener">GeeksforGeeks: Runtime Polymorphism</a></div>
+          <div class="key-box">
+            <span class="kb-label">KEY CONCEPTS</span>
+            <ul>
+              <li>Which method runs is resolved at runtime, not at compile time</li>
+              <li>The correct overridden method is chosen based on the object's actual type</li>
+              <li>Also known as "dynamic method dispatch"</li>
+              <li>Core to designing flexible, extensible real-world systems</li>
+            </ul>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<a href="#top" class="back-to-top" id="backToTop">↑</a>
+
+<footer>
+  <span>JAVA OOP BLUEPRINT HUB — built for learning, one sheet at a time</span>
+  <span>SHEETS 01–32 · SOURCES: BRO CODE + GEEKSFORGEEKS</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
